@@ -6,6 +6,7 @@ const About = () => {
         <>
             <Navigation/>
             <div>Hola Mundo</div>
+
         </>
     );
 };

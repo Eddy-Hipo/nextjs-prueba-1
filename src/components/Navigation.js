@@ -16,6 +16,7 @@ const Navigation = () => {
                 <li>
                     <Link href='/post/2/Comment 2'>Post 2</Link>
                 </li>
+
             </ul>
         </>
     );

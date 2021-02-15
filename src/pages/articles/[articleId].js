@@ -45,7 +45,6 @@ export async function getStaticPaths() {
             { params: { articleId: '4' } },
             { params: { articleId: '5' } },
             { params: { articleId: '6' } },
-            { params: { articleId: '7' } }
         ],
         fallback: true // See the "fallback" section below
     };
