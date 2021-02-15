@@ -6,7 +6,6 @@ const ArticleDetails = ( { article } ) => {
         return 'Mo se pudo obtener el artículo';
     }
 
-
     return (
         <>
             <div>{article.title}</div>
@@ -21,7 +20,7 @@ export async function getStaticProps(context) {
 
     const {articleId} = context.params;
 
-    const res = await fetch(`https://stormy-badlands-60158.herokuapp.com/api/articles/${articleId}`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/articles/${articleId}`)
     const data = await res.json()
 
     if (!data) {
@@ -48,6 +47,6 @@ export async function getStaticPaths() {
             { params: { articleId: '6' } },
             { params: { articleId: '7' } }
         ],
-        fallback: false // See the "fallback" section below
+        fallback: true // See the "fallback" section below
     };
 }
