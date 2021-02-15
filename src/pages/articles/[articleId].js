@@ -6,6 +6,7 @@ const ArticleDetails = ( { article } ) => {
         return 'Mo se pudo obtener el artículo';
     }
 
+
     return (
         <>
             <div>{article.title}</div>
